@@ -1,0 +1,28 @@
+.standfirst {
+  font-size: var(--font-size-large);
+  line-height: 1;
+  
+}
+
+[lang="en-US"] >  .standfirst::first-letter {
+  color: var(--color-primary);
+  font-size: var(--font-size-xxx-large);
+  font-family: var(--font-family-heading);
+  initial-letter: 3;
+  padding-right: 0 1rem;
+  margin: 1rem 0 0 0;
+  
+}
+
+[lang="zh-Hans"] >  .standfirst {
+  color: var(--color-primary);
+  font-size: var(--font-size-x-large);
+  font-weight: 700;
+  
+}
+
+.lede {
+  font-size: var(--font-size-medium);
+  line-height: 1.2;
+}
+

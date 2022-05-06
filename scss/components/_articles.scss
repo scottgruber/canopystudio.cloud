@@ -1,0 +1,27 @@
+article header h1 {
+  margin-block-start: 0;
+}
+
+.c-articles article,
+.c-article {
+  max-width: 75ch;
+}
+.c-articles h2 {
+  margin-block-end: var(--spacing-x-small);
+}
+
+.c-articles .lede {
+  margin-block-start: 0;
+}
+
+.c-articles article {
+  border-bottom: 1px dotted silver;
+}
+
+.c-media {
+  padding: var(--spacing);
+  border: 1px solid silver;  
+}
+
+
+

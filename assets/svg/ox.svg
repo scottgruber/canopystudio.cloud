@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" class="svg ox" data-name="ox" viewBox="0 0 132.26 109.89">
+  <g class="ear-left">
+    <path class="ear-left-outer" d="M27.09,28.34S7.76,32.37.27,55.21c0,0-1.32,2.48,1.85,2.13S23.19,50,28.21,60.6,37.65,24.09,27.09,28.34Z" fill="#996733"></path>
+    <path class="ear-left-inner" d="M21.36,38.73A15.39,15.39,0,0,0,11.3,49.38s-.47,1,.79.74,8.24-3.28,10.5.53S25.48,36.88,21.36,38.73Z" fill="#fff"></path>
+  </g>
+  <g class="ear-right">
+    <path d="M105.16,28.34s19.34,4,26.82,26.87c0,0,1.32,2.48-1.85,2.13S109.06,50,104.05,60.6,94.6,24.09,105.16,28.34Z" fill="#996733"></path>
+    <path d="M111.06,39a14.7,14.7,0,0,1,9.61,10.18s.45.91-.75.7-7.87-3.13-10,.5S107.13,37.25,111.06,39Z" fill="#fff"></path>
+  </g>
+  <path class="horn-left" d="M29.94,30.94c.25-3.22-5.45-28.57-5.45-28.57s-.44-5.59,7.13.41S50.3,17.46,50.3,17.46Z" fill="#996733"></path>
+  <path class="horn-right" d="M100.13,30.94c-.25-3.22,5.45-28.57,5.45-28.57s.44-5.59-7.12.41S79.77,17.46,79.77,17.46Z" fill="#996733"></path>
+  <path class="face" d="M66.15,109.89c28-.7,23.74-13.3,23.74-13.3s-1.4-19.6,10.5-28,11.9-20.3,11.9-20.3C112.2,6.6,66.09,6.42,66.09,6.42h.06S20.05,6.6,20,48.29c0,0,0,11.9,11.9,20.3s10.5,28,10.5,28S38.15,109.19,66.15,109.89Z" fill="#f4e9de"></path>
+  <path class="head-spot" d="M33.6,17.4a8.87,8.87,0,0,0,.52,8.4c2.63,4.73,7.88,6.3,11,4.73s0-10.5,10.5-13.13S63.44,8,59.15,7C59.15,7,41.21,9.44,33.6,17.4Z" fill="#5c5758"></path>
+  <path class="cheek-spot" d="M101.59,67.8s2.13-5.52-.62-7.41-6.07-1.31-7.38.42,2.88,5.8-2.2,10.13-1,7.88,1.58,7.23c0,0-.07,0,.48-1A33,33,0,0,1,101.59,67.8Z" fill="#5c5758"></path>
+  <path class="tongue-spot" d="M42.13,98.91s2-3.54,4.59-.52,1.89,4.15,9.06,6.51a4.89,4.89,0,0,1,2.14,1c1,1.12.66,2.83-3.15,2.89a25.43,25.43,0,0,1-9.62-4A9.71,9.71,0,0,1,42.13,98.91Z" fill="#5c5758"></path>
+  <g class="snout">
+    <ellipse class="snout-back" cx="66.3" cy="85.03" rx="26.24" ry="14.08" fill="#976828"></ellipse>
+    <circle class="nostril-left-dot" cx="55.3" cy="85.08" r="2.36" fill="#fff"></circle>
+    <circle class="nostril-left" cx="55.3" cy="85.08" r="1.19" fill="#976828"></circle>
+    <circle class="nostril-right-dot" cx="75.6" cy="85.08" r="2.36" fill="#fff"></circle>
+    <circle class="nostril-right" cx="75.73" cy="85.08" r="1.19" fill="#976828"></circle>
+  </g>
+  <g class="eye-left">
+    <ellipse class="eye-spot-left" cx="44.83" cy="49.34" rx="7.98" ry="9.1" fill="#fff"></ellipse>
+    <circle class="eye-sclera-left" cx="44.83" cy="49.32" r="5.32"></circle>
+    <circle class="eye-sparkle-left" cx="44.83" cy="50.26" r="2" fill="#fff"></circle>
+    <path class="eye-lid-left" d="M36.86,49.34c0-5,3.57-9.1,8-9.1s8,4.08,8,9.1" fill="#cb9866"></path>
+  </g>
+  <g class="eye-right">
+    <ellipse class="eye-spot-right" cx="82.83" cy="49.34" rx="7.98" ry="9.1" fill="#fff"></ellipse>
+    <circle class="eye-sclera-right" cx="82.83" cy="49.32" r="5.32"></circle>
+    <circle class="eye-sparkle-right" cx="82.83" cy="50.26" r="1.99" fill="#fff"></circle>
+    <path class="eye-lid-right" d="M74.86,49.34c0-5,3.57-9.1,8-9.1s8,4.08,8,9.1" fill="#cb9866"></path>
+  </g>
+</svg>

@@ -1,0 +1,91 @@
+//  =====================================================
+//  HTML Living Standard
+//  Sections elements
+//  https://html.spec.whatwg.org/multipage/sections.html
+//  body, article, section, nav, aside, hgroup, header, footer, address
+//  ======================================================
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  text-rendering: optimizeLegibility;
+  line-height: var(--line-height-text);
+  color: var(--color-text);
+  min-height: 100vh;
+}
+
+header[role="banner"] {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  padding: var(--spacing);
+
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: var(--spacing) 0 0 0;
+    font-size: var(--font-size);
+    list-style-type: none;
+
+    li {
+      padding: var(--spacing-small);
+    }
+
+    a {
+      color: var(--color-neutral-lighter);
+    }
+  }
+}
+
+main[role="main"] {
+  margin: var(--spacing);
+}
+
+aside {
+  grid-area: aside;
+}
+
+footer[role="contentinfo"] {
+  grid-area: footer;
+  padding: var(--spacing) 0;
+  margin-block-start: var(--spacing-large);
+  justify-self: center;
+}
+
+aside h2 {
+  font-size: var(--font-size-medium);
+}
+
+footer a,
+footer a:focus,
+footer a:hover {
+  text-decoration: none;
+}
+
+//* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

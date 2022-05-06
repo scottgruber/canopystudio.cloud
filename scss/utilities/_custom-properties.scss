@@ -1,0 +1,183 @@
+// 300px     18.75em at 16px base font
+// 480px     30em
+// 600px     37.5em
+// 768px     48em
+// 992px 	   62em
+// 1024px    64em
+// 1220px    76.250em
+// 1382px	   86.375em
+// 1400px    87.5em
+
+
+@font-face {
+  font-family: "Ogg";
+  src: url("/fonts/Ogg-Regular.woff2") format("woff2"),
+       url("/fonts/Ogg-Regular.woff") format("woff"); 
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Ogg";
+  src: url("/fonts/Ogg-RegularItalic.woff2") format("woff2"),
+       url("/fonts/Ogg-RegularItalic.woff") format("woff"); 
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Ogg";
+  src: url("/fonts/Ogg-Bold.woff2") format("woff2"),
+       url("/fonts/Ogg-Bold.woff") format("woff"); 
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "OggText-Book";
+  src: url("/fonts/OggText-Book.woff2") format("woff2"),
+       url("/fonts/OggText-Book.woff") format("woff"); 
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "OggText-Book";
+  src: url("/fonts/OggText-BookItalic.woff2") format("woff2"),
+       url("/fonts/OggText-BookItalic.woff") format("woff"); 
+  font-style: italic;
+}
+
+
+:root {
+  // Typography 
+  --font-family: "OggText-Book", serif;
+  --font-family-heading: "Ogg", serif;
+  --font-family-chinese: "Noto Sans", "Noto Sans CJK SC", sans-serif;
+  --font-family-chinese-alt: "KaiTi", 楷体, STKaiti, 华文楷体, serif;
+  --font-family-system: -apple-system, BlinkMacSystemFont, "helvetica neue",
+    helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+  --font-family-mono: monospace;
+  --font-weight-thin: 200;
+  --font-weight-light: 300;
+  --font-weight-regular: 400; //yes
+  --font-weight-bold: 700; // yes
+  --font-weight-extra-bold: 800;
+  --font-weight-black: 900;
+  --text-base-size: 1rem;
+  --text-scale-ratio: 1.125;
+  --line-height-text: 1.5;
+  --line-height-heading: 1;
+
+  --andy-clarke-no-malarkey-grid: 2fr 1fr 1fr 2fr 2fr 1fr 1fr 2fr;
+  //--grid-compound-4-3: 3fr 1fr 2fr 2fr 3fr 1fr;
+  //--grid-compound-5-4: 6fr 1fr 4fr 3fr 3fr 4fr 1fr 6fr;
+  --grid-basic: 1fr 1fr;
+  --grid-gap: 2vw;
+  --grid-row-gap: 4vh;
+
+  // Type scale 8:9 major second scale 1.125 
+
+  // --font-size-xx-display: 3.653rem;
+  // --font-size-xx-display: 3.247rem;
+  // --font-size-x-display: 2.887rem;
+  // --font-size-display: 2.566rem;
+  // --font-size-xxxx-large: 2.281rem;
+  // --font-size-xxx-large: 2.027rem;
+  // --font-size-xx-large: 1.802rem;
+  // --font-size-x-large: 1.602rem;
+  // --font-size-large: 1.424rem;
+  // --font-size-medium: 1.125rem;
+  // --font-size: 1rem;
+  // --font-size-small: 0.889rem;
+  // --font-size-x-small: 0.79rem;
+
+  // Type scale 4:5 major third scale 1.25 
+  --font-size-xxx-display: 11.642rem;
+  --font-size-xx-display: 9.313rem;
+  --font-size-x-display: 5.96rem;
+  --font-size-display: 4.768rem;
+  --font-size-xxxx-large: 3.815rem;
+  --font-size-xxx-large: 3.052rem;
+  --font-size-xx-large: 2.441rem;
+  --font-size-x-large: 1.953rem;
+  --font-size-large: 1.563rem;
+  --font-size-medium: 1.25rem;
+  --font-size: 1rem;
+  --font-size-small: 0.8rem;
+  --font-size-x-small: 0.64rem;
+
+  --color-primary-lighter: #db86b8; // lightest fuchsia
+  --color-primary-light: #ba6b99; // lighter fuchsia
+  --color-primary: #9a4f79; // antique fuchsia purple
+  --color-primary-dark: #7a3258; // darker fuchsia
+  --color-primary-darker: #581539; // darkest fuchsia
+
+  --color-secondary-lighter: #fff600; // lightest gold
+  --color-secondary-light: #fee000; // lighter gold
+  --color-secondary: #fccb00; //  gold
+  --color-secondary-dark: #f9b600; //   darker gold
+  --color-secondary-darker: #f5a000; //  California darkest gold;
+
+  --color-accent-lighter: #00d5e7; // 
+  --color-accent-light: #00b6Cb; //
+  --color-accent: #0096af; // 
+  --color-accent-dark: #007793; // 
+  --color-accent-darker: #005777; // 
+
+  --color-neutral-lighter: #f8f8f8; // 
+  --color-neutral-light: #f2f2f2; // 
+  --color-neutral: #ececec; // 
+  --color-neutral-dark: #e6e6e6; // 
+  --color-neutral-darker: #dadada; //   
+
+  --color-night-lighter: #270609; // 
+  --color-night-light: #1d0507; // 
+  --color-night: #140305; // 
+  --color-night-dark: #0c0203; // 
+  --color-night-darker: #010000; //   
+
+  --color-black: var(--color-night);
+  --color-white: #fff;
+
+  --color-text: var(--color-black);
+  --color-text-alt: var(--color-white);
+
+  --color-background: var(--color-neutral-darker);
+
+  --color-border: var(--color-primary-dark);
+  --color-border-separator: var(--color-accent-lighter);
+
+  --border-radius-x-small: 0.25rem;
+  --border-radius-small: 0.5rem;
+  --border-radius-medium: 0.75rem;
+  --border-radius-large: 1rem;
+  --border-radius-circle: 50%;
+  --border-width-hairline: 0.5px;
+  --border-width-thin: 1px;
+  --border-width-thick: var(--border-radius-medium);
+  --border-style-thin: var(--border-width-thin) solid var(--color-border);
+  --border-style-thick: var(--border-width-thick) solid var(--color-border);
+
+  --max-width: 72rem;
+  --spacing-xx-small: 0.25rem;
+  --spacing-x-small: 0.5rem;
+  --spacing-small: 0.75rem;
+  --spacing: 1rem;
+  --spacing-medium: 1.5rem;
+  --spacing-large: 2rem;
+  --spacing-x-large: 4rem;
+  --spacing-xx-large: 8rem;
+
+  --duration-instantly: 0;
+  --duration-immediately: 0.05s;
+  --duration-quickly: 0.1s;
+  --duration-promptly: 0.2s;
+  --duration-slowly: 0.4s;
+  --timing: ease;
+
+  @-ms-viewport {
+    width: device-width; }
+  
+  @-o-viewport {
+    width: device-width; }
+  
+  @viewport {
+    width: device-width; }  
+}
