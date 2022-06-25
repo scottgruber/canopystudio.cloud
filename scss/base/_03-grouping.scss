@@ -30,10 +30,13 @@ ol[role="list"] {
   list-style: none;
 }
 
+
 ol,
 ul {
-  padding: 0;
-}
+  padding: 0em;
+  margin-inline-start: var(--spacing-small); 
+  }
+
 
 ul > li {
   margin: 0 0 var(--spacing-small);

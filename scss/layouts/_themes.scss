@@ -1,3 +1,51 @@
+.chen-luyin {
+  display: grid;
+
+  @media (min-width: 48em) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  header[role="banner"] {
+    grid-column: 1 / -1;
+  }
+
+  main[role="main"] {
+    grid-column: 1 / -1;
+    justify-self: center;
+    align-self: center;
+    margin: 1em;
+  }
+
+  @media (min-width: 60em) {
+    main[role="main"] {
+      grid-column: 2 / 3;
+    }
+  }
+  figure.gallery img {
+    object-fit: cover;
+    width: 100%;
+  }
+  @media (min-width: 48em) {
+    figure.gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5em;
+      margin-block: var(--spacing-large);
+    }
+  }
+  @media (min-width: 72em) {
+    figure.gallery {
+      margin-inline: -100%;
+  }
+ 
+  }
+
+  footer[role="contentinfo"] {
+    grid-column: 1 / -1;
+  }
+}
+
+
 [data-theme="split-page"] {
   display: grid;
   grid-template-areas:
@@ -5,6 +53,7 @@
     "main"
     "figure"
     "footer";
+
   @media (min-width: 48em) {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 1fr 1fr auto;
