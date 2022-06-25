@@ -39,8 +39,20 @@ header h1 span {
   font-size: 75%;
 }
 
+main h1 span {
+  display: block;
+  font-size: 70%;
+  line-height: 1.5;
+}
+
 h2 {
   font-size: var(--font-size-x-large);
+  margin-block-start: var(--spacing-x-large);
+}
+
+h2+p {
+ font-size: var(--font-size-medium);
+ line-height: 1.2;
 }
 
 h3 {

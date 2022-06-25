@@ -1,4 +1,16 @@
 @charset "UTF-8";
+.u-xs {
+  font-size: var(--font-size-x-small);
+}
+
+.u-block {
+  display: block;
+}
+
+.u-visually-hidden {
+  display: none;
+}
+
 @font-face {
   font-family: "Ogg";
   src: url("/fonts/Ogg-Regular.woff2") format("woff2"), url("/fonts/Ogg-Regular.woff") format("woff");
@@ -133,18 +145,6 @@
   }
 }
 
-.u-xs {
-  font-size: var(--font-size-x-small);
-}
-
-.u-block {
-  display: block;
-}
-
-.u-visually-hidden {
-  display: none;
-}
-
 *,
 *::before,
 *::after {
@@ -260,8 +260,20 @@ header h1 span {
   font-size: 75%;
 }
 
+main h1 span {
+  display: block;
+  font-size: 70%;
+  line-height: 1.5;
+}
+
 h2 {
   font-size: var(--font-size-x-large);
+  margin-block-start: var(--spacing-x-large);
+}
+
+h2 + p {
+  font-size: var(--font-size-medium);
+  line-height: 1.2;
 }
 
 h3 {
