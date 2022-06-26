@@ -636,7 +636,7 @@ article header h1 {
   line-height: 1;
 }
 
-[lang=en-US] > .standfirst::first-letter {
+[lang=en-us] > .standfirst::first-letter {
   color: var(--color-primary);
   font-size: var(--font-size-xxx-large);
   font-family: var(--font-family-heading);
@@ -645,7 +645,7 @@ article header h1 {
   margin: 1rem 0 0 0;
 }
 
-[lang=zh-Hans] > .standfirst {
+[lang=zh-cn] > .standfirst {
   color: var(--color-primary);
   font-size: var(--font-size-x-large);
   font-weight: 700;

@@ -4,7 +4,7 @@
   
 }
 
-[lang="en-US"] >  .standfirst::first-letter {
+[lang="en-us"] >  .standfirst::first-letter {
   color: var(--color-primary);
   font-size: var(--font-size-xxx-large);
   font-family: var(--font-family-heading);
@@ -14,7 +14,7 @@
   
 }
 
-[lang="zh-Hans"] >  .standfirst {
+[lang="zh-cn"] >  .standfirst {
   color: var(--color-primary);
   font-size: var(--font-size-x-large);
   font-weight: 700;
