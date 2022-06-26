@@ -1,5 +1,5 @@
 :root {
-  --font-family: "Noto Sans", "Noto Sans CJK SC", sans-serif;
+  --font-family-chinese: "Noto Sans", sans-serif;
   --font-family-alt: "KaiTi", 楷体, STKaiti, 华文楷体, serif;
   --font-weight: 400;
   --font-weight-bold: 700;
@@ -72,7 +72,7 @@
 }
 
 html {
-  font-family: var(--font-family);
+  font-family: var(--font-family-chinese);
   font-size: var(--font-size);
   color: var(--color-text-default);
 }
@@ -251,7 +251,7 @@ footer {
 
   blockquote p {
     margin: 0;
-    font-family: var(--font-family-alt);
+    font-family: var(--font-family-chinese-alt);
    
   }
 
@@ -474,7 +474,7 @@ table {
 th,
 td {
   padding: 0 var(--spacing-x-small);
-  font-family: var(--font-family);
+  font-family: var(--font-family-chinese);
   font-size: var(--font-size-small);
   text-align: start;
   white-space: nowrap;

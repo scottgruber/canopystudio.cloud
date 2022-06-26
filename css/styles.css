@@ -39,7 +39,7 @@
 :root {
   --font-family: "OggText-Book", serif;
   --font-family-heading: "Ogg", serif;
-  --font-family-chinese: "Noto Sans", "Noto Sans CJK SC", sans-serif;
+  --font-family-chinese: "Noto Sans", sans-serif;
   --font-family-chinese-alt: "KaiTi", 楷体, STKaiti, 华文楷体, serif;
   --font-family-system: -apple-system, BlinkMacSystemFont, "helvetica neue",
     helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
