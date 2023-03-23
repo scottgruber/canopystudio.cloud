@@ -211,10 +211,9 @@ footer a:hover {
   html:focus-within {
     scroll-behavior: auto;
   }
-
   *,
-*::before,
-*::after {
+  *::before,
+  *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
@@ -692,6 +691,12 @@ article header h1 {
   grid-column: 1/-1;
 }
 
+.c-essay-chinese-english {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+}
+
 [data-theme=split-page] {
   display: grid;
   grid-template-areas: "header" "main" "figure" "footer";
@@ -730,60 +735,50 @@ article header h1 {
 
 @media print {
   *,
-*:before,
-*:after {
+  *:before,
+  *:after {
     background: transparent !important;
     color: #000 !important;
     box-shadow: none !important;
     text-shadow: none !important;
   }
-
   a,
-a:visited {
+  a:visited {
     text-decoration: underline;
   }
-
   a[href]:after {
     content: " (" attr(href) ")";
   }
-
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
-
   a[href^="#"]:after,
-a[href^="javascript:"]:after {
+  a[href^="javascript:"]:after {
     content: "";
   }
-
   pre {
     white-space: pre-wrap !important;
   }
-
   pre,
-blockquote {
+  blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
-
   thead {
     display: table-header-group;
   }
-
   tr,
-img {
+  img {
     page-break-inside: avoid;
   }
-
   p,
-h2,
-h3 {
+  h2,
+  h3 {
     orphans: 3;
     widows: 3;
   }
-
   h2,
-h3 {
+  h3 {
     page-break-after: avoid;
   }
 }
